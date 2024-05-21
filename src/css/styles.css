@@ -1,15 +1,9 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+@import url("../../node_modules/simplelightbox/dist/simple-lightbox.min.css");
+@import url("../../node_modules/izitoast/dist/css/iziToast.min.css");
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, Avenir, "Montserrat", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -22,4 +16,74 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.loader {
+  display: none;
+  font-family: var(--font-family);
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.search-form {
+
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.search-input {
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+}
+
+.search-btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+  background: #4e75ff;
+  border: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.gallery {
+  display: flex;
+  gap: 24px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.photo-container {
+
+  border: 1px solid #808080;
+  width: 360px;
+
+}
+
+
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+
+.photo {
+  height: 200px;
+  width: 360px;
+}
+.body-class {
+  margin: 0;
 }
