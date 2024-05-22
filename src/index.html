@@ -4,25 +4,41 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
-  </head>
+    <title>HomeWork11</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
   <body class="body-class">
-    <form class="search-form">
-      <div class="">
-        <input
-          type="text"
-          class="search-input"
-          placeholder="Search images..."
-          name="searchKeyword"
-        />
-      </div>
-      <button type="submit" class="search-btn">Search</button>
-    </form>
-    <div id="loader" class="loader">Loading image, please wait...</div>
-    <ul class="gallery"></ul>
+    <header class="header"></header>
+    <main>
+      <section>
+        <div class="container section-form__container">
+          <form class="search-form js-search-form" action="">
+            <label class="input-text"></label>
+            <input
+              class="input"
+              type="text"
+              name="searchword"
+              placeholder="Search images..."
+            />
+            <button class="search-form-btn" type="submit">Search</button>
+          </form>
+        </div>
+      </section>
+      <section class="gallery">
+        <ul class="list js-gallery"></ul>
+      </section>
+    </main>
+    <span class="loader is-hidden js-loader"
+      >Loading image, please wait...</span
+    >
     <script type="module" src="./main.js"></script>
   </body>
 </html>
