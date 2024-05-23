@@ -18,27 +18,23 @@
   <body class="body-class">
     <header class="header"></header>
     <main>
-      <section>
-        <div class="container section-form__container">
-          <form class="search-form js-search-form" action="">
-            <label class="input-text"></label>
-            <input
-              class="input"
-              type="text"
-              name="searchword"
-              placeholder="Search images..."
-            />
-            <button class="search-form-btn" type="submit">Search</button>
-          </form>
-        </div>
-      </section>
+      <form class="search-form js-search-form" action="">
+        <label class="input-text"></label>
+        <input
+          class="input"
+          type="text"
+          name="searchword"
+          placeholder="Search images..."
+        />
+        <button class="search-form-btn" type="submit">Search</button>
+      </form>
+      <div class="loader is-hidden js-loader">
+        Loading image, please wait...
+      </div>
       <section class="gallery">
         <ul class="list js-gallery"></ul>
       </section>
     </main>
-    <span class="loader is-hidden js-loader"
-      >Loading image, please wait...</span
-    >
     <script type="module" src="./main.js"></script>
   </body>
 </html>

@@ -105,7 +105,6 @@
 }
 
 .loader {
-  display: none;
   font-family: var(--font-family);
   text-align: center;
   font-weight: 400;
@@ -113,6 +112,7 @@
   line-height: 150%;
   letter-spacing: 0.04em;
   color: #2e2f42;
+  margin-left: auto;
 }
 
 .loader.is-hidden {
@@ -120,4 +120,3 @@
   visibility: hidden;
   pointer-events: none;
 }
-
